@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Contact = () => {
   return (
@@ -8,7 +8,7 @@ const Contact = () => {
         </div>
         <form className='mx-auto flex flex-col gap-5'>
             <div className='flex gap-5'>
-                <input type='text' className='w-32 mdl:w-52 mdl:h-12 rounded-xl pl-2 py-1' placeholder='Phone no.' />
+                <input type='text' className='w-24 md:w-32 mdl:w-52 mdl:h-12 rounded-xl pl-2 py-1' placeholder='Phone no.' />
                 <input type='email' className='w-32 mdl:w-52 mdl:h-12 rounded-xl pl-2 py-1' placeholder='Email' />
             </div>
             <input type='text' className='rounded-xl pl-2 py-1 h-12' placeholder='Company' />

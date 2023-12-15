@@ -13,13 +13,13 @@ import CopyrightIcon from '@mui/icons-material/Copyright';
 const Footer = () => {
     return (
         <>
-            <div className='bg-[#6623A4] w-[100%]'>
-                <div className='flex justify-between xs:pl-2 sml:pl-6 xs:pr-2 sml:pr-16 py-10 items-start'>
+            <div className='bg-[#6623A4] w-[100%] mt-10'>
+                <div className='flex justify-between gap-5 md:gap-0 xs:pl-2 sml:pl-6 xs:pr-0 sml:pr-16 py-10 items-start'>
                     <div className='flex gap-2 items-center'>
                         <img className='w-10 bg-white rounded-full' alt='logo' src={logo} />
                         <h1 className='text-white text-lg font-semibold'>Artizence</h1>
                     </div>
-                    <div className='flex gap-[2rem] text-white'>
+                    <div className='flex gap-5 md:gap-[2rem] text-white'>
                         <div className='text-xl flex flex-col gap-2'>
                             <h1>Home</h1>
                             <h1>About</h1>

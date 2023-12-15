@@ -1,14 +1,11 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
 import Article from './Article';
 import SubArticles from './SubArticles';
 import Contact from './Contact';
 
 const Home = () => {
   return (
-    <div className='flex flex-col gap-16'>
-      <Header />
+    <div className='flex flex-col gap-16 '>
       <Article />
       <SubArticles />
       <Article />
@@ -16,7 +13,6 @@ const Home = () => {
       <SubArticles />
       <Article />
       <Contact />
-      <Footer />
     </div>
   )
 }

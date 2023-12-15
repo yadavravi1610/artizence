@@ -3,6 +3,7 @@ import logo from './assets/artizenceLogo.png';
 import MenuIcon from '@mui/icons-material/Menu';
 import { motion } from 'framer-motion';
 import CloseIcon from '@mui/icons-material/Close';
+import { Link } from 'react-router-dom';
 
 
 
@@ -19,7 +20,7 @@ const Header = () => {
       }, [ref, sideMenu])
     return (
         <>
-            <div className='w-auto overflow-x-hidden h-auto mdl:h-72 bg-[url(./assets/headerBackground.png)] flex flex-col justify-between'>
+            <div className='w-auto overflow-x-hidden mb-10 h-auto mdl:h-72 bg-[url(./assets/headerBackground.png)] flex flex-col justify-between'>
                 <div className='flex justify-between pl-6 pr-16 py-5'>
                     <div className='flex gap-2 items-center'>
                         <img className='w-10 bg-white rounded-full' alt='logo' src={logo} />
@@ -27,7 +28,9 @@ const Header = () => {
                     </div>
                     <div className='xs:invisible md:visible flex gap-8 items-center text-white'>
                         <div>
-                            <h1 className='text-lg'>Services</h1>
+                            <Link to='/ArticlePage'>
+                             <h1 className='text-lg'>Services</h1>
+                             </Link>
                         </div>
                         <div>
                             <h1 className='text-lg'>Blogs</h1>
