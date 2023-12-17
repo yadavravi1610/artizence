@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import Home from './Home';
 import {
   createBrowserRouter,
@@ -8,12 +8,12 @@ import {
 import ArticlePage from './ArticlePage';
 import Header from './Header';
 import Footer from './Footer';
+import Package from './Package';
 
 const Layout = () => {
   return (
     <>
     <Header />
-      {/* <Home /> */}
       <Outlet />
       <Footer />
     </>
@@ -33,6 +33,10 @@ function App() {
               {
                 path:"/ArticlePage",
                 element: <ArticlePage />
+              },
+              {
+                path:"/Package",
+                element: <Package />
               }
             ]
     }

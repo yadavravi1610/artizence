@@ -18,6 +18,9 @@ module.exports = {
         lgl:"1024px",
         xl:"1280px"
       },
+      dropShadow:{
+        xl:"rgba(102, 35, 164, 0.6)",
+      },
     },
   },
   plugins: [],

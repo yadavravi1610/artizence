@@ -36,7 +36,9 @@ const Header = () => {
                             <h1 className='text-lg'>Blogs</h1>
                         </div>
                         <div>
-                            <h1 className='font-bold underline text-lg'>Contact Us</h1>
+                           <Link to='/Package'> 
+                           <h1 className='font-bold underline text-lg'>Contact Us</h1>
+                           </Link>
                         </div>
                         <button className='bg-white text-[#5D0A96] px-2 py-1 rounded-lg'>
                             Reach out to us
