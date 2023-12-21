@@ -1,5 +1,5 @@
 // import './App.css';
-import Home from './Home';
+import Home from './Components/Blog Page/Home';
 import {
   createBrowserRouter,
   Outlet,

@@ -5,8 +5,8 @@ import Header from '../../Header';
 const Package = () => {
     const [packageContent, setPackageContent] = useState(false);
      useEffect(()=>{
-        const currentUrl = window.location.href;
-    if(currentUrl === "http://localhost:3000/Package")
+        const currentPath = window.location.pathname;
+        if(currentPath === "/Package" || currentPath.startsWith("/Package"))
     {
        setPackageContent(true);
     }

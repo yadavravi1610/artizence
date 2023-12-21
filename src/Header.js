@@ -4,21 +4,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { motion } from 'framer-motion';
 import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-router-dom';
-import BlogHero from './BlogHero';
+import BlogHero from './Components/Blog Page/BlogHero';
 import ArticlePageHero from './Components/Article Page/ArticlePageHero';
 import PackagePageHero from './Components/Package Page/PackagePageHero';
 
 
 
-const Header = (blog, articlePage, packageContent) => {
-
-    const {blogContent} = blog;
-    const {article} = articlePage;
-    const {packpageContent} = packageContent;
-
-    console.log("Blog", blogContent);
-    console.log("article", article);
-    console.log("Package", packpageContent);
+const Header = ({articlePage, blog , packageContent}) => {
     const [sideMenu, setSideMenu] = useState(false);
     const ref = useRef();
 
@@ -81,13 +73,13 @@ const Header = (blog, articlePage, packageContent) => {
                     }
                 </div>
                 {
-                    blogContent && <BlogHero />
+                    blog && <BlogHero />
                 }
                 {
-                    article && <ArticlePageHero />
+                    articlePage && <ArticlePageHero />
                 }
                 {
-                    packpageContent && <PackagePageHero />
+                    packageContent && <PackagePageHero />
                 }
                 
             </div>

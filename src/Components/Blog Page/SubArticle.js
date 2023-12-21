@@ -1,5 +1,5 @@
 import React from 'react';
-import sub from './assets/subArticle.jpg';
+import sub from '../../assets/subArticle.jpg';
 
 const SubArticle = () => {
   return (

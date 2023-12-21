@@ -8,13 +8,13 @@ const ArticlePage = () => {
   const [articlePage, setArticlePage] = useState(false);
 
   useEffect(() => {
-    const currentUrl = window.location.href;
-    if(currentUrl === "http://localhost:3000/ArticlePage")
+    const currentPath = window.location.pathname;
+    if(currentPath === "/ArticlePage" || currentPath.startsWith("/ArticlePage/"))
     {
        setArticlePage(true);
     }
   }, []);
-
+// console.log(articlePage);
   return (
     <>
       <Header articlePage={articlePage} />

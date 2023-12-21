@@ -1,19 +1,20 @@
 import React ,{useEffect, useState}from 'react';
 import Article from './Article';
 import SubArticles from './SubArticles';
-import Contact from './Contact';
-import Header from './Header';
+import Contact from '../../Contact';
+import Header from '../../Header';
 
 const Home = () => {
   const [blog, setBlog] = useState(false);
   useEffect(() => {
-    const currentUrl = window.location.href;
-    if(currentUrl === "http://localhost:3000/")
+    const currentPath = window.location.pathname;
+    if(currentPath === "/" || currentPath.startsWith("/"))
     {
        setBlog(true);
     }
-
   }, []);
+// console.log(blog);
+
   return (
     
     <div className='flex flex-col gap-16 '>
