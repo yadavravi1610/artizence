@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Contact from './Contact';
 import vector from './assets/Vector.svg';
 import articleImage from './assets/tom-morel-ktVazL5c7FM-unsplash 3.svg';
+import Header from './Header';
 
 const ArticlePage = () => {
+  const [articlePage, setArticlePage] = useState(false);
+
+  useEffect(() => {
+    const currentUrl = window.location.href;
+    if(currentUrl === "http://localhost:3000/ArticlePage")
+    {
+       setArticlePage(true);
+    }
+
+  }, []);
+
   return (
     <>
+      {/* <Header  /> */}
       <div className='flex flex-col md:flex-row mx-2 md:mx-10 '>
         <div className='flex flex-row md:flex-col gap-3 min-w-[12%] my-10 flex-wrap'>
           <div className='px-1 md:px-5 py-2 border-l-2 border-[#D4BEF6AB] ml-1 md:ml-5 font-light'>
@@ -71,8 +84,8 @@ const ArticlePage = () => {
             <p className='text-lg'>TEXT India, a diverse and culturally rich nation in indian subcontinent, is renowned for its ancient history, vibrant traditions, and spiritual heritage. From the majestic Himalayas to the vast Thar Desert, India's landscapes are as varied as its languages, religions, and cuisines. With a tapestry of bustling cities, sacred temples, and historical monuments, India captures the essence of both tradition and modernity, attracting visitors with its kaleidoscope of experiences and deep-rooted cultural tapestry.</p>
           </div>
           <div className='my-10 flex gap-10 font-semibold items-center border-t-2 border-[#D9D9D9] border-b-2 py-3'>
-              <button className='w-40 bg-[#290E4B] text-lg rounded-xl py-1 font-semibold text-white'>category</button>
-              <p>:</p><p>NLP</p><p>NLP</p>
+            <button className='w-40 bg-[#290E4B] text-lg rounded-xl py-1 font-semibold text-white'>category</button>
+            <p>:</p><p>NLP</p><p>NLP</p>
           </div>
         </div>
       </div>

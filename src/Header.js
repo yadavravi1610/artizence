@@ -4,23 +4,33 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { motion } from 'framer-motion';
 import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-router-dom';
+import BlogHero from './BlogHero';
+import ArticlePageHero from './ArticlePageHero';
+import PackagePageHero from './PackagePageHero';
 
 
 
 const Header = () => {
+    // const {props1} = props;
+    // console.log(props);
+
+    // const  blog  = props1.blog;
+    // const { articlePage } = article;
+    // console.log("Article", articlePage);
     const [sideMenu, setSideMenu] = useState(false);
+// console.log(blog);
     const ref = useRef();
 
     useEffect(() => {
         document.body.addEventListener("click", (e) => {
-          if (ref.current && !ref.current.contains(e.target)) {
-            setSideMenu(false);
-          }
+            if (ref.current && !ref.current.contains(e.target)) {
+                setSideMenu(false);
+            }
         })
-      }, [ref, sideMenu])
+    }, [ref, sideMenu])
     return (
         <>
-            <div className='w-auto overflow-x-hidden mb-10 h-auto mdl:h-72 bg-[url(./assets/headerBackground.png)] flex flex-col justify-between'>
+            <div className='w-auto overflow-x-hidden mb-10 h-auto  bg-[url(./assets/headerBackground.png)] bg-cover flex flex-col justify-between '>
                 <div className='flex justify-between pl-6 pr-16 py-5'>
                     <div className='flex gap-2 items-center'>
                         <img className='w-10 bg-white rounded-full' alt='logo' src={logo} />
@@ -29,16 +39,16 @@ const Header = () => {
                     <div className='xs:invisible md:visible flex gap-8 items-center text-white'>
                         <div>
                             <Link to='/ArticlePage'>
-                             <h1 className='text-lg'>Services</h1>
-                             </Link>
+                                <h1 className='text-lg'>Services</h1>
+                            </Link>
                         </div>
                         <div>
                             <h1 className='text-lg'>Blogs</h1>
                         </div>
                         <div>
-                           <Link to='/Package'> 
-                           <h1 className='font-bold underline text-lg'>Contact Us</h1>
-                           </Link>
+                            <Link to='/Package'>
+                                <h1 className='font-bold underline text-lg'>Contact Us</h1>
+                            </Link>
                         </div>
                         <button className='bg-white text-[#5D0A96] px-2 py-1 rounded-lg'>
                             Reach out to us
@@ -65,13 +75,15 @@ const Header = () => {
                                 </button>
                             </motion.div>
                             <div onClick={() => setSideMenu(false)} className='w-10 absolute cursor-pointer h-10 ml-[70%] text-white flex items-center justify-center duration-300'><CloseIcon />
-          </div>
+                            </div>
                         </div>
                     }
                 </div>
-                <div className='text-white xs:text-[2rem] sml:text-[3rem] font-bold'>
-                    <h1 className='tracking-tight py-11 px-16'>BLOGS</h1>
-                </div>
+                {/* {
+                    blog && <BlogHero />
+                } */}
+                {/* <ArticlePageHero /> */}
+                <PackagePageHero />
             </div>
         </>
     )

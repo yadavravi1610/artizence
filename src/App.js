@@ -6,14 +6,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ArticlePage from './ArticlePage';
-import Header from './Header';
+// import Header from './Header';
 import Footer from './Footer';
 import Package from './Package';
 
 const Layout = () => {
   return (
     <>
-    <Header />
+    {/* <Header /> */}
       <Outlet />
       <Footer />
     </>
