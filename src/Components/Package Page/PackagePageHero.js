@@ -1,5 +1,5 @@
 import React from 'react';
-import packageimage from './assets/packageheader.svg'
+import packageimage from '../../assets/packageheader.svg';
 
 const PackagePageHero = () => {
     return (

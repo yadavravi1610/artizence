@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-router-dom';
 import BlogHero from './BlogHero';
-import ArticlePageHero from './ArticlePageHero';
-import PackagePageHero from './PackagePageHero';
+import ArticlePageHero from './Components/Article Page/ArticlePageHero';
+import PackagePageHero from './Components/Package Page/PackagePageHero';
 
 
 

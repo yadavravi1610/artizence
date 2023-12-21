@@ -5,10 +5,10 @@ import {
   Outlet,
   RouterProvider,
 } from "react-router-dom";
-import ArticlePage from './ArticlePage';
+import ArticlePage from './Components/Article Page/ArticlePage';
 // import Header from './Header';
 import Footer from './Footer';
-import Package from './Package';
+import Package from './Components/Package Page/Package';
 
 const Layout = () => {
   return (

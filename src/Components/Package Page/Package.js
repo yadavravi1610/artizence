@@ -1,9 +1,11 @@
 import React from 'react';
-import circleImg from './assets/circle_purple.png.svg';
+import circleImg from '../../assets/circle_purple.png.svg';
+import Header from '../../Header';
 
 const Package = () => {
     return (
         <div className='flex flex-col gap-10'>
+            <Header />
             <div className='flex flex-col lg:flex-row gap-10 lg:gap-0'>
                 <div className=' lg:w-1/3 px-10 xl:px-28 flex flex-col gap-5'>
                     <div>

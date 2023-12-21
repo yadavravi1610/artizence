@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Contact from './Contact';
-import vector from './assets/Vector.svg';
-import articleImage from './assets/tom-morel-ktVazL5c7FM-unsplash 3.svg';
-import Header from './Header';
+import Contact from '../../Contact';
+import vector from '../../assets/Vector.svg';
+import articleImage from '../../assets/tom-morel-ktVazL5c7FM-unsplash 3.svg';
+import Header from '../../Header';
 
 const ArticlePage = () => {
   const [articlePage, setArticlePage] = useState(false);
@@ -13,12 +13,11 @@ const ArticlePage = () => {
     {
        setArticlePage(true);
     }
-
   }, []);
 
   return (
     <>
-      {/* <Header  /> */}
+      <Header articlePage={articlePage} />
       <div className='flex flex-col md:flex-row mx-2 md:mx-10 '>
         <div className='flex flex-row md:flex-col gap-3 min-w-[12%] my-10 flex-wrap'>
           <div className='px-1 md:px-5 py-2 border-l-2 border-[#D4BEF6AB] ml-1 md:ml-5 font-light'>
