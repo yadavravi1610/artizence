@@ -10,15 +10,16 @@ import PackagePageHero from './Components/Package Page/PackagePageHero';
 
 
 
-const Header = () => {
-    // const {props1} = props;
-    // console.log(props);
+const Header = (blog, articlePage, packageContent) => {
 
-    // const  blog  = props1.blog;
-    // const { articlePage } = article;
-    // console.log("Article", articlePage);
+    const {blogContent} = blog;
+    const {article} = articlePage;
+    const {packpageContent} = packageContent;
+
+    console.log("Blog", blogContent);
+    console.log("article", article);
+    console.log("Package", packpageContent);
     const [sideMenu, setSideMenu] = useState(false);
-// console.log(blog);
     const ref = useRef();
 
     useEffect(() => {
@@ -79,11 +80,16 @@ const Header = () => {
                         </div>
                     }
                 </div>
-                {/* {
-                    blog && <BlogHero />
-                } */}
-                {/* <ArticlePageHero /> */}
-                <PackagePageHero />
+                {
+                    blogContent && <BlogHero />
+                }
+                {
+                    article && <ArticlePageHero />
+                }
+                {
+                    packpageContent && <PackagePageHero />
+                }
+                
             </div>
         </>
     )

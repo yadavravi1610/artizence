@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import circleImg from '../../assets/circle_purple.png.svg';
 import Header from '../../Header';
 
 const Package = () => {
+    const [packageContent, setPackageContent] = useState(false);
+     useEffect(()=>{
+        const currentUrl = window.location.href;
+    if(currentUrl === "http://localhost:3000/Package")
+    {
+       setPackageContent(true);
+    }
+     },[])
+    //  console.log(packageContent);
     return (
         <div className='flex flex-col gap-10'>
-            <Header />
+            <Header packageContent={packageContent}/>
             <div className='flex flex-col lg:flex-row gap-10 lg:gap-0'>
                 <div className=' lg:w-1/3 px-10 xl:px-28 flex flex-col gap-5'>
                     <div>
