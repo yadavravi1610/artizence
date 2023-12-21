@@ -25,10 +25,12 @@ const Header = ({articlePage, blog , packageContent}) => {
         <>
             <div className='w-auto overflow-x-hidden mb-10 h-auto  bg-[url(./assets/headerBackground.png)] bg-cover flex flex-col justify-between '>
                 <div className='flex justify-between pl-6 pr-16 py-5'>
+                    <Link to='/'>
                     <div className='flex gap-2 items-center'>
                         <img className='w-10 bg-white rounded-full' alt='logo' src={logo} />
                         <h1 className='text-white text-lg'>Artizence</h1>
                     </div>
+                    </Link>
                     <div className='xs:invisible md:visible flex gap-8 items-center text-white'>
                         <div>
                             <Link to='/ArticlePage'>
