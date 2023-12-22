@@ -57,21 +57,21 @@ const Package = () => {
                         <h1 className='text-2xl font-bold'>Basic</h1>
                         <div className='flex flex-col items-center gap-3'>
                             <h1>$459+</h1>
-                            <button className='bg-[#FFF9F9] text-[#713E79] py-2 px-3 sm:px-2 sml:px-3 rounded-lg font-bold'>Let's Discuss</button>
+                            <button className='bg-[#FFF9F9] text-[#713E79] text-sm sml:text-base py-2 px-3 sm:px-1 sml:px-3 rounded-lg font-bold'>Let's Discuss</button>
                         </div>
                      </div>
                      <div className='w-full sm:w-40 md:w-60 lgl:w-72 xl:w-80 sm:border-r-2 border-black h-80 flex flex-col items-center justify-between'>
                         <h1 className='text-2xl font-bold'>Standard</h1>
                         <div className='flex flex-col items-center gap-3'>
                             <h1>$459+</h1>
-                            <button className='bg-[#FFF9F9] text-[#713E79] py-2 px-3 sm:px-2 sml:px-3 rounded-lg font-bold'>Let's Discuss</button>
+                            <button className='bg-[#FFF9F9] text-[#713E79] text-sm sml:text-base py-2 px-3 sm:px-1 sml:px-3 rounded-lg font-bold'>Let's Discuss</button>
                         </div>
                      </div>
                      <div className='w-full sm:w-40 md:w-60 lgl:w-72 xl:w-80 h-80 flex flex-col items-center justify-between'>
                         <h1 className='text-2xl font-bold'>Advance</h1>
                         <div className='flex flex-col items-center gap-3'>
                             <h1>$459+</h1>
-                            <button className='bg-[#FFF9F9] text-[#713E79] py-2 px-3 rounded-lg font-bold'>Let's Discuss</button>
+                            <button className='bg-[#FFF9F9] text-[#713E79] text-sm sml:text-base py-2 px-3 sm:px-1 sml:px-3 rounded-lg font-bold'>Let's Discuss</button>
                         </div>
                      </div>
                 </div>
